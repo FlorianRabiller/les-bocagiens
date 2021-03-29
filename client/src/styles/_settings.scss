@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "font-1";
+  src: url(./assets/fonts/JosefinSans-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(./assets/fonts/JosefinSans-Regular.ttf);
+}
+@font-face {
+  font-family: "font-3";
+  src: url(./assets/fonts/JosefinSans-Bold.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+$font-2: "font-2", serif;
+$font-3: "font-3", serif;
+
+$color-1: #44bd32;
+$color-2: #4cd137;
+$color-3: rgb(0, 22, 44);
+$color-4: #BD7676;
+$black: #2f3640;
+$white: #f5f6fa;
+$gray: #dcdde1;
+$red: #e84118;
+$blue: #487eb0;
+$blue-2: #00a8ff;
+$dark-blue: #192a56;
+$shadow: rgb(219, 218, 218);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+
+  &::selection {
+    background: $blue;
+  }
+}
+a,
+a:visited {
+  color: $blue;
+}
+input,
+textarea {
+  resize: none;
+  border-radius: 20px;
+  width: 270px;
+  font-family: $font-1;
+  background: $white;
+}
+textarea {
+  &:focus {
+    box-shadow: 0 0 4px rgba(0, 22, 44, 0.1);
+  }
+}
+input[type="submit"] {
+  color: $white;
+  font-family: $font-3;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+input[type="checkbox"] {
+  box-shadow: none;
+  width: 20px;
+  margin: 10px 0;
+}
+body {
+  font-family: $font-2;
+  line-height: 1.4rem;
+  background: $black;
+  color: $color-3;
+}
+.error {
+  color: $red;
+  font-weight: bold;
+}
+.success {
+  color: $color-2;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+form {
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+
+  input {
+    width: 50%;
+    padding: 14px 20px;
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: $font-2;
+  }
+}
+button {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  background: $dark-blue;
+  color: $white;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-family: $font-3;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background: $blue;
+  }
+}
+.cancel {
+  border-radius: 0;
+  background: $white;
+  color: $dark-blue;
+  margin: 0;
+
+  &:hover {
+    background: $white;
+    color: $color-4;
+  }
+}
+.send {
+  &:hover {
+    background: $color-1;
+  }
+}
+.not-connected {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: $white;
+    border: 1px solid $white;
+    padding: 20px;
+    font-size: 2rem;
+    transition: 0.5s;
+
+    &:hover {
+      background: $white;
+      color: $black;
+    }
+  }
+}

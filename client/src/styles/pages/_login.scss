@@ -1,0 +1,140 @@
+.home-container {
+
+    h1, h3 {
+      text-align: center;
+      padding-top: 40px;
+      font-size: 2.4rem;
+      color: $white;
+
+      @media screen and(max-width: 650px) {
+        display: none;
+      }
+
+    }
+
+    .connection-form{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      transition: 0.5s;
+      margin-top: 100px;
+
+      @media screen and(max-width: 650px) {
+        height: 100vh;
+        margin-top: 0;
+      }
+
+      .form-container {
+        position: relative;
+        width: 800px;
+        height: 500px;
+        background: $white;
+
+        .user {
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+
+          .imgBox {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            transition: 0.5s;
+
+            @media screen and(max-width: 650px) {
+              display: none;
+            }
+            
+            img {
+              position: absolute;
+              top: 0; left: 0;
+              width: 100%;
+              height: 100%;
+
+              @media screen and(max-width: 650px) {
+                display: none;
+              }
+            }
+          }
+          
+          .formBox {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            transition: 0.5s;
+
+            @media screen and(max-width: 650px) {
+              width: 100%;
+            }
+
+            form {
+              width: 80%;
+            }
+            
+            h2 {
+              font-size: 18px;
+              font-weight: 600;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              text-align: center;
+              width: 100%;
+              margin-bottom: 10px;
+              color: $black;
+            }
+            input {
+              width: 100%;
+              padding: 10px;
+              background: $gray;
+              color: $black;
+              border: none;
+              outline: none;
+              font-size: 14px;
+              margin: 8px 0;
+              letter-spacing: 1px;
+              font-weight: 300;
+              border-radius: 0;
+            }
+            input[type="submit"] {
+              background: $dark-blue;
+              color: $white;
+            }
+          }
+          .btn-container {
+            position: absolute;
+            bottom: 25px;
+            left: 51%;
+            font-weight: 600;
+
+            @media screen and(max-width: 650px) {
+              left: 10px;
+            }
+            
+            span {
+              cursor: pointer;
+              color: $blue;
+              text-transform: uppercase;
+            }
+          }
+          .signup-succeed {
+            position: absolute;
+            bottom: 45px;
+            left: 55%;
+            font-weight: 600;
+
+            @media screen and(max-width: 650px) {
+              left: 5%;
+            }
+          }
+        }
+      }
+    }
+  }

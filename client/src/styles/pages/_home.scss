@@ -1,0 +1,44 @@
+.home {
+  .home-connected-container {
+    .friend-hint-container {
+      width: 70%;
+      margin: 10px auto;
+
+      @media screen and(max-width: 650px) {
+        width: 100%;
+      }
+
+      h4 {
+        color: $white;
+      }
+      
+      ul {
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+
+        @media screen and(max-width: 650px) {
+          width: 100%;
+        }
+      }
+      li {
+        display: flex;
+        align-items: center;
+        margin: 10px 5px;
+        width: 300px;
+        background: $white;
+        padding: 5px 10px;
+
+        p {
+          width: 170px;
+        }
+  
+        img {
+          height: 60px;
+          width: 60px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
